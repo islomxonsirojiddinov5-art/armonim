@@ -1,0 +1,443 @@
+body {
+  margin: 0;
+  background: white;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #030912;
+  color: white;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+
+header {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  border-bottom: 1px solid #162538;
+  background: rgba(3, 9, 18, 0.9);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #168cff;
+}
+
+nav {
+  display: flex;
+  gap: 45px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #168cff;
+}
+
+.login {
+  background: transparent;
+  color: white;
+  border: 1px solid #168cff;
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login:hover {
+  background: #168cff;
+}
+
+/* ASOSIY QISM */
+
+main {
+  text-align: center;
+  padding: 50px 20px;
+  min-height: calc(100vh - 78px);
+
+  background:
+    radial-gradient(circle at 50% 40%, #062347 0%, transparent 45%),
+    linear-gradient(#030912, #02060b);
+}
+
+.small-title {
+  display: inline-block;
+  padding: 12px 25px;
+  border: 1px solid #168cff;
+  border-radius: 30px;
+  color: #bcdcff;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+h1 span {
+  color: #168cff;
+}
+
+.description {
+  max-width: 650px;
+  margin: auto;
+  color: #b8c7da;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* VIDEO */
+
+.video-box {
+  width: 100%;
+  max-width: 900px;
+  margin: 35px auto 0;
+  padding: 3px;
+
+  border: 2px solid #168cff;
+  border-radius: 20px;
+
+  box-shadow:
+    0 0 20px #168cff,
+    0 0 60px rgba(0, 140, 255, 0.3);
+
+  overflow: hidden;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 480px;
+  display: block;
+  border: none;
+  border-radius: 17px;
+}
+
+/* TUGMALAR */
+
+.buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 16px 30px;
+  border-radius: 35px;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.watch {
+  background: #168cff;
+  color: white;
+  box-shadow: 0 0 25px rgba(22, 140, 255, 0.5);
+}
+
+.watch:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 35px #168cff;
+}
+
+.photos {
+  color: white;
+  border: 1px solid #168cff;
+}
+
+.photos:hover {
+  background: #168cff;
+}
+
+/* PASTKI YOZUV */
+
+.bottom-text {
+  margin-top: 55px;
+  color: #7f9ab8;
+  font-size: 16px;
+}
+
+/* TELEFON UCHUN */
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .video-box {
+    .video-box {
+      width: 70%;
+      max-width: 900px;
+    }
+  }
+
+  .video-box iframe {
+    .video-box iframe {
+      width: 100%;
+      height: 550px;
+    }
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+h2 {
+  font-size: 70px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.4),
+    0 0 25px rgba(22, 140, 255, 0.5);
+}
+
+h2 span {
+  color: #168cff;
+
+  text-shadow:
+    0 0 10px #168cff,
+    0 0 25px #168cff,
+    0 0 50px rgba(22, 140, 255, 0.8);
+}
+.video-box {
+  width: 80%;
+  max-width: 1100px;
+  padding: 3px;
+  border: 2px solid #168cff;
+  border-radius: 20px;
+  animation: rangliChiroq 5s infinite linear;
+}
+
+@keyframes rangliChiroq {
+  0% {
+    border-color: #008cff;
+    box-shadow:
+      0 0 15px #008cff,
+      0 0 35px #008cff;
+  }
+
+  20% {
+    border-color: #8a2be2;
+    box-shadow:
+      0 0 15px #8a2be2,
+      0 0 35px #8a2be2;
+  }
+
+  40% {
+    border-color: #ff1493;
+    box-shadow:
+      0 0 15px #ff1493,
+      0 0 35px #ff1493;
+  }
+
+  60% {
+    border-color: #ff3030;
+    box-shadow:
+      0 0 15px #ff3030,
+      0 0 35px #ff3030;
+  }
+
+  80% {
+    border-color: #ffd000;
+    box-shadow:
+      0 0 15px #ffd000,
+      0 0 35px #ffd000;
+  }
+
+  100% {
+    border-color: #00ff88;
+    box-shadow:
+      0 0 15px #00ff88,
+      0 0 35px #00ff88;
+  }
+}
+
+.video-box {
+  width: 80%;
+  max-width: 1100px;
+  padding: 3px;
+  border: 2px solid #168cff;
+  border-radius: 20px;
+
+  animation: neon 2s infinite alternate;
+}
+
+@keyframes neon {
+  0% {
+    box-shadow:
+      0 0 5px #168cff,
+      0 0 15px #168cff;
+  }
+
+  50% {
+    box-shadow:
+      0 0 15px #168cff,
+      0 0 35px #168cff,
+      0 0 60px #168cff;
+  }
+
+  100% {
+    box-shadow:
+      0 0 5px #168cff,
+      0 0 15px #168cff;
+  }
+}
+
+.watch {
+  color: white;
+  background: #168cff;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 18px 35px;
+  border-radius: 35px;
+
+  animation: tugmaChiroq 3s infinite;
+}
+
+@keyframes tugmaChiroq {
+  0% {
+    background: #008cff;
+    box-shadow:
+      0 0 10px #008cff,
+      0 0 25px #008cff,
+      0 0 45px #008cff;
+  }
+
+  25% {
+    background: #8a2be2;
+    box-shadow:
+      0 0 10px #8a2be2,
+      0 0 25px #8a2be2,
+      0 0 45px #8a2be2;
+  }
+
+  50% {
+    background: #ff1493;
+    box-shadow:
+      0 0 10px #ff1493,
+      0 0 25px #ff1493,
+      0 0 45px #ff1493;
+  }
+
+  75% {
+    background: #ff3030;
+    box-shadow:
+      0 0 10px #ff3030,
+      0 0 25px #ff3030,
+      0 0 45px #ff3030;
+  }
+
+  100% {
+    background: #00d084;
+    box-shadow:
+      0 0 10px #00d084,
+      0 0 25px #00d084,
+      0 0 45px #00d084;
+  }
+}
+.sher {
+  width: 80%;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+
+  text-align: center;
+
+  background: rgba(10, 15, 25, 0.8);
+  border: 2px solid #ff1493;
+  border-radius: 25px;
+
+  box-shadow:
+    0 0 15px #ff1493,
+    0 0 35px #ff1493;
+
+  animation: yurakGlow 3s infinite alternate;
+}
+.sher p {
+  font-size: 32px !important;
+  line-height: 2;
+  color: white;
+  text-align: center;
+  text-shadow:
+    0 0 8px white,
+    0 0 15px #ff1493;
+}
+.sher p {
+    font-size: 32px !important;
+}
+.sher h2 {
+  font-size: 55px !important;
+  color: white;
+  text-shadow:
+    0 0 10px white,
+    0 0 25px #ff1493,
+    0 0 45px #ff1493;
+}
+@keyframes yurakGlow {
+  0% {
+    border-color: #ff1493;
+    box-shadow:
+      0 0 10px #ff1493,
+      0 0 25px #ff1493;
+  }
+
+  50% {
+    border-color: #8a2be2;
+    box-shadow:
+      0 0 15px #8a2be2,
+      0 0 40px #8a2be2;
+  }
+
+  100% {
+    border-color: #ff3030;
+    box-shadow:
+      0 0 15px #ff3030,
+      0 0 40px #ff3030;
+  }
+}
